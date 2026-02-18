@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Do for full day. Next day do another 3
+.</h1>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var exercises = [
+    "SLOW DOWN",
+    "LOOK UP",
+    "INTERRUPT THOUGHT",
+    "SHAKE YOUR HEAD",
+    "RELAX",
+    "I AM HERE",
+    "DON'T PLAN TOMORROW",
+    "WATCH HOW YOU'RE LURED AWAY",
+    "BE CONSCIOUSLY PASSIVE",
+    "DETACHMENT FROM EVENT",
+    "THAT PAIN IS UNNECESSARY",
+    "IT IS...",
+    "THERE IS...",
+    "CATCH ARTIFICIAL BEHAVIOUR",
+    "OBSERVE FACIAL EXPRESSIONS",
+    "3 TYPES OF THOUGHT",
+    "MENTAL, EMOTIONAL OR PHYSICAL",
+    "PRACTICE NOT THINKING",
+    "THINKING OR SEEING?",
+    "LET LIFE HAPPEN",
+    "DON'T COMPLAIN",
+    "SEE TIGER"
+  ];
+
+  var output = "";
+  for (var i = 0; i < 3; i++) {
+    var randomIndex = Math.floor(Math.random() * exercises.length);
+    output += exercises[randomIndex] + "<br>";
+    exercises.splice(randomIndex, 1); // remove the selected exercise to avoid duplicates
+  }
+  document.getElementById("demo").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
