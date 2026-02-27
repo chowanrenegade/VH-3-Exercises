@@ -1,4 +1,4 @@
-# Mindfulness & Awareness Exercise Generator
+# Awareness Exercise Generator
 
 A minimalist productivity and self-awareness tool designed to provide users with three random "conscious reminders" per day as recommended by Vernon Howard. This tool is based on psychological and spiritual practices aimed at breaking mechanical behavior and increasing present-moment awareness.
 
